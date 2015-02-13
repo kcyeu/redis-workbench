@@ -9,7 +9,7 @@ $(function(){
       async: false,
       success: function (d) {
         console.log(d);
-        $html = d.result;
+        $html = (d.result == '') ? '(empty list or set)' : d.result;
       },
       error: function (d) {
         $html = 'Something went wrong...';
@@ -25,7 +25,6 @@ $(function(){
       1000);
     return false;
   });
-
   $('#resultReset').click( function (e) {
     $('#result').text('');
   });
