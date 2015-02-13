@@ -3,8 +3,9 @@
 $version: "1.2.3";
 $light-color: white;
 $dark-color: black;
-// Pantone Color of Year 2011: Honeysuckle
-$theme-color: #D65076;
+
+// Pantone Color of Year 2007: Chili Pepper
+$theme-color: #9b2335;
 
 $darker-theme-color: darken($theme-color, 5%);
 $lighter-theme-color: lighten($theme-color, 5%);
@@ -18,7 +19,6 @@ $lighter-theme-color: lighten($theme-color, 5%);
 
 textarea#result {
   background-color: $light-color;
-//  background-image: url(http://preloaders.net/preloaders/287/Filling%20broken%20ring.gif);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }

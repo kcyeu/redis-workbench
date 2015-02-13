@@ -55,12 +55,38 @@
       <div class="col-xs-12">
         <h3>Example</h3>
 <pre>
-SADD mySet foo bar baz
-SADD numSet 1 3 5 8 6 4
-SORT numSet
+SADD myset foo bar baz
+LPUSH mylist a
+RPUSH mylist b
+HMSET user:1000 username antirez password P1pp0 age 34
+HGETALL user:1000
+KEYS *
 </pre>
       </div>
       -->
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Examples
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+            <div class="panel-body">
+<pre>
+SADD myset foo bar baz
+LPUSH mylist a
+RPUSH mylist b
+HMSET user:1000 username antirez password P1pp0 age 34
+HGETALL user:1000
+KEYS *
+</pre>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="divider"></div>

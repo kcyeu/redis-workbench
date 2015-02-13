@@ -1,14 +1,14 @@
-/* line 12, ../sass/styles.scss */
+/* line 13, ../sass/styles.scss */
 .text-muted {
   margin: 20px 0;
 }
 
-/* line 15, ../sass/styles.scss */
+/* line 16, ../sass/styles.scss */
 .main {
   padding-bottom: 80px;
 }
 
-/* line 19, ../sass/styles.scss */
+/* line 20, ../sass/styles.scss */
 textarea#result {
   background-color: white;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@ textarea#result {
 
 /* line 26, ../sass/styles.scss */
 .divider {
-  background-color: #D65076;
+  background-color: #9b2335;
   height: 6px;
   position: fixed;
   bottom: 154px;
@@ -31,9 +31,9 @@ textarea#result {
   position: fixed;
   bottom: 0;
   width: 100%;
-  -moz-box-shadow: #d13b66 0px -2px 8px;
-  -webkit-box-shadow: #d13b66 0px -2px 8px;
-  box-shadow: #d13b66 0px -2px 8px;
+  -moz-box-shadow: #861e2e 0px -2px 8px;
+  -webkit-box-shadow: #861e2e 0px -2px 8px;
+  box-shadow: #861e2e 0px -2px 8px;
 }
 /* line 43, ../sass/styles.scss */
 .footer .copyright {
@@ -49,5 +49,5 @@ textarea#result {
 }
 /* line 51, ../sass/styles.scss */
 .footer .copyright a:hover {
-  color: #d13b66;
+  color: #861e2e;
 }
