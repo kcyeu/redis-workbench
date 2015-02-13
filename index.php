@@ -50,6 +50,18 @@
         </form>
       </div>
     </div>
+    <!--
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Example</h3>
+<pre>
+SADD mySet foo bar baz
+SADD numSet 1 3 5 8 6 4
+SORT numSet
+</pre>
+      </div>
+      -->
+    </div>
   </div>
   <div class="divider"></div>
   <footer class="footer">
