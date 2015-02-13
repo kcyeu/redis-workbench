@@ -1,4 +1,4 @@
-# redis workbench
+# Redis Workbench
 A simple web interface written in PHP to manipulate Redis.
 
 ## Prerequisites
