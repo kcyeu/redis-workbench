@@ -16,6 +16,13 @@ $lighter-theme-color: lighten($theme-color, 5%);
   padding-bottom: 80px;
 }
 
+textarea#result {
+  background-color: $light-color;
+//  background-image: url(http://preloaders.net/preloaders/287/Filling%20broken%20ring.gif);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .divider {
   background-color: $theme-color;
   height: 6px;

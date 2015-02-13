@@ -1,6 +1,9 @@
 $(function(){
   $('form#commandForm').submit( function (e) {
-//    $('#loading').html('<img src="http://preloaders.net/preloaders/287/Filling%20broken%20ring.gif"> loading...');
+    $textarea = $('textarea#result');
+    $textarea.text("");
+    $textarea.css("background-image","url(http://preloaders.net/preloaders/287/Filling%20broken%20ring.gif)");
+
     var formData = new FormData($(this)[0]);
     $.ajax({
       url: './command.php',
@@ -19,10 +22,13 @@ $(function(){
       processData: false
     });
     setTimeout(
-      function () {$('#result').text($html);},1000);
-    $('html, body').animate(
-      { scrollTop: $( '#result' ).offset().top },
-      1000);
+      function () {
+        $textarea.css("background-image","none");      
+        $('#result').text($html);
+      },1000);
+      $('html, body').animate(
+        { scrollTop: $( '#result' ).offset().top },
+        1000);
     return false;
   });
   $('#resultReset').click( function (e) {

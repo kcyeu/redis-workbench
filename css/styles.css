@@ -9,6 +9,13 @@
 }
 
 /* line 19, ../sass/styles.scss */
+textarea#result {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* line 26, ../sass/styles.scss */
 .divider {
   background-color: #D65076;
   height: 6px;
@@ -16,7 +23,7 @@
   bottom: 154px;
 }
 
-/* line 26, ../sass/styles.scss */
+/* line 33, ../sass/styles.scss */
 .footer {
   background-color: #000;
   height: 54px;
@@ -28,19 +35,19 @@
   -webkit-box-shadow: #d13b66 0px -2px 8px;
   box-shadow: #d13b66 0px -2px 8px;
 }
-/* line 36, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
 .footer .copyright {
   line-height: 1.6;
   color: white;
   font-size: 14px;
   text-align: right;
 }
-/* line 41, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 .footer .copyright a {
   color: white;
   text-decoration: none;
 }
-/* line 44, ../sass/styles.scss */
+/* line 51, ../sass/styles.scss */
 .footer .copyright a:hover {
   color: #d13b66;
 }
