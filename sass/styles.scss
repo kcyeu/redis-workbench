@@ -1,0 +1,49 @@
+@import "compass";
+
+$version: "1.2.3";
+$light-color: white;
+$dark-color: black;
+// Pantone Color of Year 2011: Honeysuckle
+$theme-color: #D65076;
+
+$darker-theme-color: darken($theme-color, 5%);
+$lighter-theme-color: lighten($theme-color, 5%);
+
+.text-muted {
+  margin: 20px 0;
+}
+.main {
+  padding-bottom: 80px;
+}
+
+.divider {
+  background-color: $theme-color;
+  height: 6px;
+  position: fixed;
+  bottom: 154px;
+}
+
+.footer {
+  background-color: #000;
+  height: 54px;
+  padding: 12px 0px;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  @include box-shadow(rgba($darker-theme-color, 1) 0px -2px 8px);
+
+  .copyright {
+    line-height: 1.6;
+    color: $light-color;
+    font-size: 14px;
+    text-align: right;
+    a {
+      color: $light-color;
+      text-decoration: none;
+      &:hover {
+        color: $darker-theme-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+/* line 12, ../sass/styles.scss */
+.text-muted {
+  margin: 20px 0;
+}
+
+/* line 15, ../sass/styles.scss */
+.main {
+  padding-bottom: 80px;
+}
+
+/* line 19, ../sass/styles.scss */
+.divider {
+  background-color: #D65076;
+  height: 6px;
+  position: fixed;
+  bottom: 154px;
+}
+
+/* line 26, ../sass/styles.scss */
+.footer {
+  background-color: #000;
+  height: 54px;
+  padding: 12px 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  -moz-box-shadow: #d13b66 0px -2px 8px;
+  -webkit-box-shadow: #d13b66 0px -2px 8px;
+  box-shadow: #d13b66 0px -2px 8px;
+}
+/* line 36, ../sass/styles.scss */
+.footer .copyright {
+  line-height: 1.6;
+  color: white;
+  font-size: 14px;
+  text-align: right;
+}
+/* line 41, ../sass/styles.scss */
+.footer .copyright a {
+  color: white;
+  text-decoration: none;
+}
+/* line 44, ../sass/styles.scss */
+.footer .copyright a:hover {
+  color: #d13b66;
+}
