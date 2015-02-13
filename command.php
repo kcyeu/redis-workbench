@@ -2,6 +2,9 @@
 
 require_once __DIR__ . '/error_reporting.php';
 
+define('REDIS_CLI_CMD', '/usr/local/bin/redis-cli');
+$redis_cli_cmd = REDIS_CLI_CMD;
+
 header('Content-type: application/json');
 
 if ($_SERVER["REQUEST_METHOD"] != 'POST')
@@ -18,7 +21,7 @@ $command = $_POST["command"];
 $command = escapeshellarg($command);
 
 ob_start();
-system("echo {$command} | redis-cli");
+system("echo {$command} | {$redis_cli_cmd}");
 $return = ob_get_contents();
 ob_end_clean();
 
