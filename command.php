@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/error_reporting.php';
+//require_once __DIR__ . '/error_reporting.php';
 
 define('REDIS_CLI_CMD', '/usr/local/bin/redis-cli');
 $redis_cli_cmd = REDIS_CLI_CMD;
@@ -14,12 +14,14 @@ header('Content-type: application/json');
 
 if ($_SERVER["REQUEST_METHOD"] != 'POST')
 {
-    die (json_encode(ErrorReporting::get_error_message(403,"Non-POST request")));
+    error_log('Non-POST request');
+    die (json_encode(array('result' => '')));
 }
 
 if ( ! array_key_exists('command', $_POST))
 {
-    die (json_encode(ErrorReporting::get_error_message(403, "Mandatory field not found")));
+    error_log('Mandatory field not found');
+    die (json_encode(array('result' => '')));
 }
 
 $command = $_POST["command"];
