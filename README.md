@@ -1,4 +1,6 @@
 # Redis Workbench
+![redis](https://i.imgur.com/2o0KogZ.png =520x)
+
 A simple web interface written in PHP to manipulate Redis.
 
 ## Prerequisites
