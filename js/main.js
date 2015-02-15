@@ -12,7 +12,7 @@ $(function(){
       async: false,
       success: function (d) {
         console.log(d);
-        $html = (d.result == '') ? '(empty list or set)' : d.result;
+        $html = d.result;
       },
       error: function (d) {
         $html = 'Something went wrong...';
