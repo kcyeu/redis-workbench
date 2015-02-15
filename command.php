@@ -26,7 +26,7 @@ $command = $_POST["command"];
 $command = escapeshellarg($command);
 
 ob_start();
-system("echo {$command} | {$redis_cli_cmd}");
+system("echo {$command} | {$redis_cli_cmd} -h {$redis_address}");
 $return = ob_get_contents();
 ob_end_clean();
 
